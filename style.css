@@ -8,12 +8,14 @@
 html{
     margin: 0;
     padding:0;
-    height: 100%;
+    height: auto;
+    width: auto;
 }
 body{
+    overflow: auto;
     margin: 0;
     padding: 20px 0 20px 0;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -33,9 +35,9 @@ body{
 }
 .container{
     display: grid;
-    width: 1000px;
+    width: auto;
     height: auto;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 400px 600px;
     grid-template-rows: 300px 900px;
     grid-auto-rows: minmax(min-content, max-content);
     background-color: whitesmoke;
@@ -147,4 +149,16 @@ li{
     border-radius: 10px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(145,145,145,1) 35%);
+}
+@media(max-width: 1000px){
+    html{
+        height: 1400px;
+    }
+    body{
+        width: 1100px;
+        height: 1400px;
+    }
+    .container{
+        height: 1300px;
+    }
 }
