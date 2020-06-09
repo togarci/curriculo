@@ -1,7 +1,7 @@
 window.onload = function(){
     var EPs = document.getElementsByClassName("EP");
     var FAs = document.getElementsByClassName("FA");
-
+    this.document.querySelector(".line").style.height = this.document.querySelector(".n2").clientHeight + 2 + "px";
     var vlEP = '';
     for(var x = 0; x != EPs.length; x++){
         if(x != 0){
