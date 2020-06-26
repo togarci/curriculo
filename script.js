@@ -1,10 +1,18 @@
 window.onload = function(){
+    // Bloco de informação Experiencia Profissional
     var EPs = document.getElementsByClassName("EP");
+    // Bloco de informação formação academica
     var FAs = document.getElementsByClassName("FA");
+
+    // Tamanho da primeira linha do objetivo
     this.document.querySelector(".line").style.height = this.document.querySelector(".n2").clientHeight + 2 + "px";
+
+    
     var vlEP = '';
     for(var x = 0; x != EPs.length; x++){
+        
         if(x != 0){
+            // pega o tamanho do bloco e add uma bolinha mais o linha que possui o tamanho bloco
             if(x != EPs.length - 1){
                 vlEP = vlEP + "\n" + '<span class="topic"></span>' + "\n" + ('<div class="line"     style="height: ' + (document.getElementsByClassName("EP")[x].clientHeight + 33) + 'px"></div>');
             } else {
@@ -12,6 +20,7 @@ window.onload = function(){
             }            
 
         } else {
+            // se for o primeiro topico recebe classe newest quem tem margen top 
             if(x != EPs.length - 1){
                 vlEP = vlEP + "\n" + '<span class="topic newest"></span>' + "\n" + ('<div class="line"     style="height: ' + (document.getElementsByClassName("EP")[x].clientHeight + 33) + 'px"></div>');
             } else {
