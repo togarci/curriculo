@@ -22,9 +22,9 @@ window.onload = function(){
         } else {
             // se for o primeiro topico recebe classe newest quem tem margen top 
             if(x != EPs.length - 1){
-                vlEP = vlEP + "\n" + '<span class="topic newest"></span>' + "\n" + ('<div class="line"     style="height: ' + (document.getElementsByClassName("EP")[x].clientHeight + 33) + 'px"></div>');
+                vlEP = vlEP + "\n" + '<span class="topic newest"></span>' + "\n" + ('<div class="line"     style="height: ' + (document.getElementsByClassName("EP")[x].clientHeight + 32) + 'px"></div>');
             } else {
-                vlEP = vlEP + "\n" + '<span class="topic newest"></span>' + "\n" + ('<div class="line"     style="height: ' + (document.getElementsByClassName("EP")[x].clientHeight - 13) + 'px"></div>');
+                vlEP = vlEP + "\n" + '<span class="topic newest"></span>' + "\n" + ('<div class="line"     style="height: ' + (document.getElementsByClassName("EP")[x].clientHeight - 10) + 'px"></div>');
             }
             
         }
